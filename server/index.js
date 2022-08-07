@@ -15,7 +15,7 @@ const twilioClient = require('twilio')(accountSid, authToken);
 
 app.use(cors());
 app.use(express.json());
-// app.use(express.urlencoded());
+app.use(express.urlencoded());
 
 app.get('/', (req, res) => {
     res.send('Hello, World!');
